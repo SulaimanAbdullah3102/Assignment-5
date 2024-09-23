@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': 'rgb(180, 244, 97)',
+                        'color-nav-bg': 'rgb(249, 247, 243)',
+                        'color-coin': 'rgba(17, 17, 17, 0.05)',
+    
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 z-10 bg-opacity-95 bg-white" >
+        <div class="bg-color-nav-bg">
+           <div class="container mx-auto navbar pb-6">
+               <div class="navbar-start">
+                   <button id="btn-blog" class="btn bg-color-primary">
+                    <a href="index.html">Home</a>
+                </button>
+               </div>
+               <div class="navbar-center space-x-2">
+                 <img src="assets/logo.png" alt=""> <p class="text-lg font-medium">Donate Bangladesh</p>
+               </div>
+               <div class="navbar-end space-x-2"> 
+                <img src="assets/coin.png" alt=""> <p class="text-base font-medium">5000</p> <p class="text-base font-medium"></p>BDT</p>
+               </div>
+             </div>
+        </div>
+       
+           
+        </header>
+ <main class=" container mx-auto">
+  <p class="text-5xl font-bold px-5 py-10">
+    Important FAQ
+  </p>
+    <div class="collapse collapse-arrow ">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Documant Object Model(DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow ">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>This specification adds two new methods to any objects implementing the Document, DocumentFragment, or Element interfaces:
+
+            querySelector()
+            Returns the first matching Element node within the node's subtree. If no matching node is found, null is returned.
+            
+            querySelectorAll()
+            Returns a NodeList containing all matching Element nodes within the node's subtree, or an empty NodeList if no matches are found.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using the DOM?</div>
+        <div class="collapse-content">
+          <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+        </div>
+      </div>
+ </main>
+</body>
+</html>

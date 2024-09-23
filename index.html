@@ -24,11 +24,13 @@
 
 </head>
 <body>
- <header class="sticky top-0 z-10 bg-opacity-95 bg-white" >
- <div class="bg-color-nav-bg">
-    <div class="container mx-auto navbar pb-6">
+ <header class="sticky top-0 z-10 bg-opacity-90 bg-white" >
+ <div class="bg-color-nav-bg bg-opacity-50">
+    <div class="container mx-auto navbar pb-6 ">
         <div class="navbar-start">
-            <button class="btn bg-color-primary">Blog</button>
+            <button id="btn-blog" class="btn bg-color-primary">
+                <a href="blog.html">Blog</a>
+            </button>
         </div>
         <div class="navbar-center space-x-2">
           <img src="assets/logo.png" alt=""> <p class="text-lg font-medium">Donate Bangladesh</p>
@@ -40,12 +42,13 @@
  </div>
 
       <div class="flex justify-center space-x-5 mt-12">
-        <button class="btn btn-lg bg-color-primary">Donation</button>
-        <button class="btn btn-lg">History</button>
+        <button id="btn-donate" class="btn btn-lg bg-color-primary">Donation</button>
+        <button id="btn-history" class="btn btn-lg">History</button>
         
       </div>
  </header>
  <main class="space-y-4 mb-10 mt-3">
+   <div id="donation-section" class="">
     <section >
         <div class="hero">
             <div class="hero-content flex-col lg:flex-row border-2 rounded-xl">
@@ -112,6 +115,11 @@
             </div>
           </div>
     </section>
+   </div>
+
+   <div id="history-section" class="hidden">
+    <p>this is history,still needs work</p>
+   </div>
  </main>
 </body>
 </html>
