@@ -11,3 +11,29 @@ function btnColorswitchByid(id){
 
     document.getElementById(id).classList.add('bg-color-primary');
 }
+
+function getinputValueByid(id){
+    const amount = document.getElementById(id).value;
+    const amountNumber = parseFloat(amount);
+
+    return amountNumber ;
+}
+
+function getinnertextValueByid(id){
+    const currentinner = document.getElementById(id).innerText;
+    const currentinnerNumber = parseFloat(currentinner);
+
+    return currentinnerNumber ;
+}
+
+function addition(num1,num2){
+    let sum = num1 + num2 ;
+
+    return sum ;
+}
+
+function substraction(num3,num4){
+    let rest = num3 - num4 ;
+
+    return rest ;
+}
