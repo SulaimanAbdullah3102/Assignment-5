@@ -14,6 +14,9 @@ function btnColorswitchByid(id){
 
 function getinputValueByid(id){
     const amount = document.getElementById(id).value;
+    if(isNaN(amount)){
+        return amount;
+    }
     const amountNumber = parseFloat(amount);
 
     return amountNumber ;
